@@ -20,5 +20,7 @@ namespace Insercción_Listado
         public String Telefono { get; set; }
         public String Fax { get; set; }
 
+        public String Activo { get; set; }
+
     }
 }

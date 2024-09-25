@@ -7,31 +7,33 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="ListadoClientes" Content="Listado de Clientes" HorizontalAlignment="Left" Margin="25,26,0,0" VerticalAlignment="Top" Click="ListadoClientes_Click"/>
-        <DataGrid x:Name="dgvClientes"  Margin="25,70,375,70"/>
-        <TextBox x:Name="txtIdCliente" HorizontalAlignment="Left" Margin="479,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtNombreCompañia" HorizontalAlignment="Left" Margin="636,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" Margin="479,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtCiudad" HorizontalAlignment="Left" Margin="636,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtRegion" HorizontalAlignment="Left" Margin="480,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtCodPostal" HorizontalAlignment="Left" Margin="636,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtPais" HorizontalAlignment="Left" Margin="480,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Margin="637,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtNombreContacto" HorizontalAlignment="Left" Margin="479,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtCargoContacto" HorizontalAlignment="Left" Margin="636,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtFax" HorizontalAlignment="Left" Margin="480,327,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="ListadoClientes" Content="Listado de Clientes" HorizontalAlignment="Left" Margin="25,26,0,0" VerticalAlignment="Top" Click="ListadoClientes_Click" Width="130"/>
+        <DataGrid x:Name="dgvClientes"  Margin="25,70,375,70" SelectionChanged="dgvClientes_SelectionChanged"/>
+        <TextBox x:Name="txtIdCliente" HorizontalAlignment="Left" Margin="479,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="txtNombreCompañia" HorizontalAlignment="Left" Margin="650,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="txtDireccion" HorizontalAlignment="Left" Margin="479,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="txtCiudad" HorizontalAlignment="Left" Margin="650,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="txtRegion" HorizontalAlignment="Left" Margin="480,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox x:Name="txtCodPostal" HorizontalAlignment="Left" Margin="650,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="txtPais" HorizontalAlignment="Left" Margin="480,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox x:Name="txtTelefono" HorizontalAlignment="Left" Margin="651,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
+        <TextBox x:Name="txtNombreContacto" HorizontalAlignment="Left" Margin="479,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="txtCargoContacto" HorizontalAlignment="Left" Margin="650,111,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="130"/>
+        <TextBox x:Name="txtFax" HorizontalAlignment="Left" Margin="480,327,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="129"/>
         <Label Content="Id Cliente:" HorizontalAlignment="Left" Margin="479,26,0,0" VerticalAlignment="Top"/>
-        <Label Content="Nombre Compañia:" HorizontalAlignment="Left" Margin="636,26,0,0" VerticalAlignment="Top"/>
+        <Label Content="Nombre Compañia:" HorizontalAlignment="Left" Margin="650,26,0,0" VerticalAlignment="Top"/>
         <Label Content="Nombre Contacto:" HorizontalAlignment="Left" Margin="479,80,0,0" VerticalAlignment="Top"/>
-        <Label Content="Cargo Contacto:" HorizontalAlignment="Left" Margin="636,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cargo Contacto:" HorizontalAlignment="Left" Margin="650,80,0,0" VerticalAlignment="Top"/>
         <Label Content="Dirección:" HorizontalAlignment="Left" Margin="479,134,0,0" VerticalAlignment="Top"/>
         <Label Content="Ciudad:" HorizontalAlignment="Left" Margin="636,134,0,0" VerticalAlignment="Top"/>
         <Label Content="Región:" HorizontalAlignment="Left" Margin="480,188,0,0" VerticalAlignment="Top"/>
-        <Label Content="Cod Postal:" HorizontalAlignment="Left" Margin="636,188,0,0" VerticalAlignment="Top"/>
+        <Label Content="Cod Postal:" HorizontalAlignment="Left" Margin="650,188,0,0" VerticalAlignment="Top"/>
         <Label Content="País:" HorizontalAlignment="Left" Margin="479,242,0,0" VerticalAlignment="Top"/>
-        <Label Content="Teléfono:" HorizontalAlignment="Left" Margin="637,242,0,0" VerticalAlignment="Top"/>
+        <Label Content="Teléfono:" HorizontalAlignment="Left" Margin="651,242,0,0" VerticalAlignment="Top"/>
         <Label Content="Fax:" HorizontalAlignment="Left" Margin="480,296,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.475,2.416"/>
-        <Button x:Name="btnGuardar" Content="Guardar Cliente" HorizontalAlignment="Left" Margin="637,326,0,0" VerticalAlignment="Top" Click="Button_Click" Width="120"/>
+        <Button x:Name="btnGuardar" Content="Guardar Cliente" HorizontalAlignment="Left" Margin="651,326,0,0" VerticalAlignment="Top" Click="GuardarClientes_Click" Width="129"/>
+        <Button x:Name="btnActualizar" Content="Actualizar Cliente" HorizontalAlignment="Left" Margin="25,376,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.018,0.102" Click="ActualizarClientes_Click" Width="130"/>
+        <Button x:Name="btnEliminar" Content="Eliminar Cliente" HorizontalAlignment="Left" Margin="183,376,0,0" VerticalAlignment="Top" Width="130" Click="EliminarClientes_Click"/>
 
     </Grid>
 </Window>
